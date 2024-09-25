@@ -20,7 +20,7 @@
           <!-- logo -->
           <img src="img/FreakyFashionLogoInvis.png" alt="" />
         </div>
-        <div class="header-item">
+        <div class="header-item" id="form-container">
           <!-- Search -->
           <form>
             <input type="text" placeholder="🛒  Sök produkt" />
@@ -46,14 +46,14 @@
       <!-- Hero part: -->
 
       <div class="hero">
-        <div class="hero-item">
+        <div class="hero-item" id="hero-img">
           <img src="https://placehold.co/450x300?text=Hero" alt="placeholder" />
         </div>
-        <div class="hero-item">
+        <div class="hero-item" id="hero-text">
           <h1>Lorem ipsum dolor</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            voluptatum aliquid expedita praesentium amet!
+            voluptatum aliquid expedita praesentium amet sit amet consectetur adipisicing elit.
           </p>
         </div>
       </div>
@@ -101,7 +101,7 @@
                     <p>Nyhet!</p>
                 </div>
                <a href="#">
-                  <img src="https://placehold.co/400x500?text=Hello+World" alt="placeholder">
+                  <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                </a>
                <a class="like-button-filled" href="#">
                   <img id="black-heart" src="/img/black-heart-svg.svg" alt="Like">
@@ -118,7 +118,7 @@
         <div class="main-item">
             <div class="main-item-img">
                <a href="#">
-                  <img src="https://placehold.co/400x500?text=Hello+World" alt="placeholder">
+                  <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                </a>
                <a class="like-button-filled" href="#">
                   <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
@@ -135,7 +135,7 @@
         <div class="main-item">
             <div class="main-item-img">
                 <a href="#">
-                   <img src="https://placehold.co/400x500?text=Hello+World" alt="placeholder">
+                   <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
                    <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
@@ -152,7 +152,7 @@
         <div class="main-item">
             <div class="main-item-img">
                 <a href="#">
-                   <img src="https://placehold.co/400x500?text=Hello+World" alt="placeholder">
+                   <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
                    <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
@@ -169,7 +169,7 @@
         <div class="main-item">
             <div class="main-item-img">
                 <a href="#">
-                   <img src="https://placehold.co/400x500?text=Hello+World" alt="placeholder">
+                   <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
                    <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
@@ -186,7 +186,7 @@
         <div class="main-item">
             <div class="main-item-img">
                 <a href="#">
-                   <img src="https://placehold.co/400x500?text=Hello+World" alt="placeholder">
+                   <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
                    <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
@@ -202,7 +202,7 @@
         <div class="main-item">
             <div class="main-item-img">
                 <a href="#">
-                   <img src="https://placehold.co/400x500?text=Hello+World" alt="placeholder">
+                   <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
                    <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
@@ -219,7 +219,7 @@
         <div class="main-item">
             <div class="main-item-img">
                 <a href="#">
-                   <img src="https://placehold.co/400x500?text=Hello+World" alt="placeholder">
+                   <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
                    <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
@@ -236,6 +236,7 @@
 
       <!-- Footer -->
        <footer class="footer">
+        <div class="footer-icons">
         <div class="site-icons">
             <img src="/img/truck-fill-svgrepo-com.svg" alt="">
             <p>Gratis frakt & returer</p>
@@ -251,6 +252,7 @@
         <div class="site-icons">
             <img src="img/new-3-svgrepo-com.svg" alt="">
             <p>Nyheter varje dag</p>
+        </div>
         </div>
 
         <!-- Accordion från bootstrap -->
@@ -300,13 +302,47 @@
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <ul>
-                    <li>Ring kundsupport</li>
-                    <li>Skriv meddelande</li>
+                    <li>Kontakta oss</li>
+                    <li>Skicka ett meddelande</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+
+          <!--------- Footer efter 639px ---------->
+
+          <div class="footer640px">
+            <div class="footer-item" id="shopping-part">
+              <ul>
+                <li><h2>Shopping</h2></li>
+                <li>Vinterjackor</li>
+                <li>Byxor</li>
+                <li>Tröjor</li>
+                <li>skjortor</li></li>
+              </ul>
+            </div>
+            <div class="footer-item" id="my-account">
+              <ul>
+                <li><h2>Mina Sidor</h2></li>
+                <li>Inställningar</li>
+                <li>Inloggning och säkerhet</li>
+                <li>Betalningsalternativ</li>
+                <li>Dina adresser</li>
+                <li>Dina beställningar</li>
+              </ul>
+            </div>
+            <div class="footer-item" id="services">
+              <ul>
+                <li><h2>Kundtjänst</h2></li>
+                <li>Kontakta oss</li>
+                <li>Skicka ett meddelande</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- --------COPYRIGHT------- -->
+
           <div class="copyright">
             <p>&copy; <span id="year">2024</span> Freaky Fashion. All Rights Reserved.</p>
           </div>

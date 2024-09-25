@@ -44,11 +44,10 @@ a {
 /* --------------Header Part------------- */
 
 .header {
-    /* border: 1px solid black; */
+    
     display: grid;
 }
 .header-item { /* Header barnen */
-    /* border: 1px dotted red; */
     justify-content: center;
     display: flex;
 
@@ -97,6 +96,7 @@ a {
     border: 2px solid rgb(51, 51, 51);
     padding: 10px;
     border-radius: 25px 0 25px 0;
+    margin: 10px;
 
 }
 .hero-item {    /* Hero containern + border */
@@ -116,23 +116,20 @@ a {
 .hero-item p {  /* Ändra <p> specifikt för hero-item*/
     margin: 5px;
     width: 100%;
+    font-size: 20px;
 }
 .hero-item h1 {
     margin-top: 20px;
     margin-bottom: 10px;
     width: 100%;
+    font-size: 38px;
 }
 
 /* --------SPOTS PART--------- */
 
 .spots { /* Spots containern */
     display: none; /* Skall ej visas i mobil-läge */
-    /* display: flex; */
-    flex-direction: row;
-    justify-content: space-evenly;
-    column-gap: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
 }
 .spots-item {
     position: relative;
@@ -158,18 +155,34 @@ border: 1px solid black;
 /* -------MAIN PART------- */
 
 .main {
-
+    display: grid;
 }
+
 .main-item {
     margin: 20px 5px 20px 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
 }
-.main-item img { /* Bilderna */
+.main-item-img { /* Skapa img & dess container till relative */
+    position: relative;
+    /* max-width: 639px; */
+}
+.main-item-img .fashion-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+
+}
+.main-item-img #black-heart {
     max-width: 100%;
     border-radius: 15px;
 }
 .main-item-description { /* Förklaringarna efter bild */
     display: grid;
     grid-template-columns: 3fr 1fr;
+    /* max-width: 639px; */
 }
 .main-item-description .price { /* priserna till kläder */
     justify-self: end;
@@ -195,48 +208,50 @@ border: 1px solid black;
 .main-item-description p:last-of-type { /* Gör sista <p> mindre */
     font-size: 14px;
 }
-.main-item-img { /* Skapa img & dess container till relative */
-    position: relative;
-}
 .like-button-filled { /* Skapa hjärt-ikonen */
     position: absolute;
     width: 50px;
-    top: 87%; 
-    right: 10px;
-    translate: translate(-85%, -85%);
+    bottom: 15px;
+    right: 15px;
     z-index: 10; 
 }
 .like-button-blanc { /* Skapa hjärt-ikonen */
     position: absolute;
     width: 50px;
-    top: 87%; 
-    right: 10px;
-    translate: translate(-85%, -85%);
+    bottom: 15px;
+    right: 15px;
     z-index: 10; 
 }
-.new-icon { /* Skapa Nyhet-ikonen*/
+.new-icon { 
     position: absolute;
-    top: 10px;
-    left: 10px; 
-    background-color: rgb(51, 51, 51);
-    border-radius: 5px; 
+    top: 15px;
+    left: 15px; 
+    background-color: gold;
+    border-radius: 20px; 
     z-index: 20;
-    padding: 0 20px 0 20px;
+    padding: 0 40px 0 40px;
+    border: 2px solid rgb(51, 51, 51);
+    font-style: italic;
+
 }
 .new-icon p {
-    color: white;
+    color: rgb(51, 51, 51);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
 }
 
 /* -----FOOTER----------- */
 
 .footer {
     border-top: 4px solid gold;
-    background-color: rgb(228, 228, 228);
     border-bottom: 4px solid gold;
 
 }
 .site-icons {
     display: flex;
+    align-items: center;
     gap: 20px;
     
 }
@@ -247,11 +262,14 @@ border: 1px solid black;
 .site-icons p {
     margin: 20px 0px 20px 30px;
     font-weight: bold;
+
+
 }
 .copyright {
     text-align: center;
     padding-top: 20px;
     border-top: 4px solid gold;
+    font-size: 16px;
 }
 
 /* ------ACCORDION---------- */
@@ -271,7 +289,6 @@ border: 1px solid black;
 }
 
 .accordion-body {
-    background-color: rgb(228, 228, 228) !important; /* Ljusgrå bakgrund */
     color: rgb(51, 51, 51) !important; /* Textfärg */
 }
 
@@ -281,8 +298,276 @@ border: 1px solid black;
     padding: 5px 5px 5px 5px;
 }
 
+/* -------Footer efter 640px----- */
+
+.footer640px {
+    display: none;
+}
+
 /* -------Media Queries >640px----- */
 
 @media (min-width: 640px) {
     
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .header div img { /* Freaky Fashion loggo */
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    .header-item form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-evenly; */
+        width: 100%;
+    }
+
+    #form-container {
+        flex-grow: 1;
+        display: flex; 
+        justify-content: space-between;
+
+    }
+
+    .header-item a img { /* Hjärt & korg ikonerna */
+        margin-right: 10px;
+    }
+
+    .header-item:last-child {
+        flex-grow: 2;
+        width: 100%;
+        justify-content: start;
+    }
+
+    .header-item ul {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .header-item ul li {
+        margin-bottom: 0; /* Ta bort nedre marginalen */
+    }
+
+    .header-item form input { /* Sökrutan */
+        font-size: 12px;
+        
+    }
+
+    .header-item form input::placeholder { /* Sökrutans text (placeholder) */
+        font-size: 12px;
+    }
+
+    /* ---------HERO PART--------- */
+
+    .hero {
+        border: 4px solid rgb(51, 51, 51);
+        padding: 25px;
+        margin: 0 35px 0 35px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    /* ----------MAIN PART-------- */
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .main-item-description { /* Förklaringarna efter bild */
+        grid-template-columns: 2fr 1.5fr;
+    }
+    .main-item .main-item-description .price {
+        font-size: 16px;
+    }
+    .main-item .main-item-description .clothes-item {
+        font-size: 18px;
+    }
+    .main-item .main-item-description .clothes-brand {
+        font-size: 12px;
+    }
+    .new-icon p {
+        font-size: 18px;
+    }
+    .like-button-filled { /* hjärt-ikonen */
+        width: 35px;
+
+    }
+    .like-button-blanc { /* hjärt-ikonen */
+        width: 35px;
+
+    }
+
+    /* ---------FOOTER PART----------*/
+
+    .accordion {
+        display: none;
+    }
+    
+    .footer640px {
+        display: flex;
+        border-top: 3px solid gold;
+        background-color: rgb(231, 231, 230);
+    }
+
+    .footer-item {
+        padding: 0 35px 0 0;
+
+    }
+
+    .footer-item ul li h2 {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    .footer-item ul li {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .footer-item ul {
+        list-style-type: none;
+    }
+
+    .footer-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .copyright {
+        border-top: none;
+        background-color: rgb(216, 216, 216);  /* Ändra bakgrunden vid copyright lite mörkare */ 
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+}
+
+/* -------Media Queries >1024x----- */
+
+@media (min-width: 1024px) {
+
+    /* -------HEAD PART------ */
+
+    .header div img { /* Freaky Fashion loggo */
+        height: 90px;
+    }
+
+    /* --------HERO PART------- */
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero #hero-text { /* Arrangera order (plats) i grid. */
+        order: 1; 
+    }
+
+    .hero #hero-img { /* Arrangera order (plats) i grid. */
+        order: 2;
+    }
+
+    .hero-item {    /* Hero containern */
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    /* --------SPOTS PART------- */
+
+    .spots { /* Spots containern */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        margin: 20px 15px 0 15px;
+        gap: 20px;
+    }
+
+    .spots-item h2 {
+        background-color: #7975753a; /* Applicera färg med genomskinlighet så att det ser ut som ett glas */
+        border: 10px groove #7975750e;
+        border-radius: 15px;
+        font-size: 19px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        color: rgb(51, 51, 51);
+        font-weight: bold;
+    
+    }
+
+    /* --------MAIN PART------- */
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .new-icon {
+        padding: 0 10px 0 10px;
+    }
+
+    .new-icon p {
+        font-size: 12px;
+    }
+
+    .like-button-filled { /* hjärt-ikonen */
+        width: 35px;
+
+    }
+
+    .like-button-blanc { /* hjärt-ikonen */
+        width: 35px;
+
+    }
+
+    .main-item-description { /* Förklaringarna efter bild */
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+    }
+
+    .main-item .main-item-description .price {
+        font-size: 14px;
+    }
+    .main-item .main-item-description .clothes-item {
+        font-size: 16px;
+    }
+
+    /* --------FOOTER PART------- */
+
+    .footer-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
+
+/* ----För att sidan skall se OK ut på widescreen---- */
+
+@media (min-width: 1870px) {
+    body .main-grid {
+        max-width: 1870px;
+        margin: 0 auto;
+        width: 100%;
+    }
 }
