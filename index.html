@@ -11,7 +11,7 @@
   </head>
   <body>
     
-    <div class="main-grid">
+    <main class="main-grid">
 
           <!-- Header part: -->
 
@@ -104,7 +104,7 @@
                   <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                </a>
                <a class="like-button-filled" href="#">
-                  <img id="black-heart" src="/img/black-heart-svg.svg" alt="Like">
+                  <img class="black-heart" src="/img/black-heart-svg.svg" alt="Like">
                </a>
             </div>
             <div class="main-item-description">
@@ -121,7 +121,7 @@
                   <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                </a>
                <a class="like-button-filled" href="#">
-                  <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
+                  <img class="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
                </a>
             </div>
             <div class="main-item-description">
@@ -138,7 +138,7 @@
                    <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
-                   <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
+                   <img class="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
                 </a>
              </div>
              <div class="main-item-description">
@@ -155,7 +155,7 @@
                    <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
-                   <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
+                   <img class="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
                 </a>
              </div>
              <div class="main-item-description">
@@ -171,9 +171,12 @@
                 <a href="#">
                    <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
-                <a class="like-button-filled" href="#">
-                   <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
+                <a class="like-button-filled" id="like-button-nolike" href="#">
+                   <img class="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
                 </a>
+                <a class="like-button-filled" id="like-button-like" href="#">
+                  <img class="black-heart" src="/img/black-heart-svg.svg" alt="Like">
+               </a>
              </div>
              <div class="main-item-description">
                  <h3 class="clothes-item">Klädesplagg 5</h3>
@@ -189,7 +192,7 @@
                    <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
-                   <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
+                   <img class="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
                 </a>
              </div>
              <div class="main-item-description">
@@ -205,7 +208,7 @@
                    <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
-                   <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
+                   <img class="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
                 </a>
              </div>
              <div class="main-item-description">
@@ -222,7 +225,7 @@
                    <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
                 </a>
                 <a class="like-button-filled" href="#">
-                   <img id="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
+                   <img class="black-heart" src="/img/heart-blanc-svg.svg" alt="Like">
                 </a>
              </div>
              <div class="main-item-description">
@@ -232,31 +235,36 @@
               </div>
          </div>
         </div>
-      </div>
+      </main>
 
-      <!-- Footer -->
-       <footer class="footer">
-        <div class="footer-icons">
-        <div class="site-icons">
-            <img src="/img/truck-fill-svgrepo-com.svg" alt="">
-            <p>Gratis frakt & returer</p>
-        </div>
-        <div class="site-icons">
-            <img src="/img/airplane-svgrepo-com.svg" alt="">
-            <p>Expressfrakt</p>
-        </div>
-        <div class="site-icons">
-            <img src="/img/shield-check-svgrepo-com.svg" alt="">
-            <p>Säkra betalningar</p>
-        </div>
-        <div class="site-icons">
-            <img src="img/new-3-svgrepo-com.svg" alt="">
-            <p>Nyheter varje dag</p>
-        </div>
-        </div>
+      <!-- Info-panel -->
+
+       <!-- <footer class="footer"> -->
+        <section id="information-panel">
+          <div class="footer-icons">
+          <div class="site-icons">
+              <img src="/img/truck-fill-svgrepo-com.svg" alt="">
+              <p>Gratis frakt & returer</p>
+          </div>
+          <div class="site-icons">
+              <img src="/img/airplane-svgrepo-com.svg" alt="">
+              <p>Expressfrakt</p>
+          </div>
+          <div class="site-icons">
+              <img src="/img/shield-check-svgrepo-com.svg" alt="">
+              <p>Säkra betalningar</p>
+          </div>
+          <div class="site-icons">
+              <img src="img/new-3-svgrepo-com.svg" alt="">
+              <p>Nyheter varje dag</p>
+          </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
 
         <!-- Accordion från bootstrap -->
-
+        <footer class="footer">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
@@ -310,7 +318,7 @@
             </div>
           </div>
 
-          <!--------- Footer efter 639px ---------->
+          <!-- Footer efter 639px -->
 
           <div class="footer640px">
             <div class="footer-item" id="shopping-part">
@@ -319,7 +327,7 @@
                 <li>Vinterjackor</li>
                 <li>Byxor</li>
                 <li>Tröjor</li>
-                <li>skjortor</li></li>
+                <li>skjortor</li>
               </ul>
             </div>
             <div class="footer-item" id="my-account">
@@ -341,12 +349,11 @@
             </div>
           </div>
 
-          <!-- --------COPYRIGHT------- -->
+          <!-- copyright -->
 
           <div class="copyright">
             <p>&copy; <span id="year">2024</span> Freaky Fashion. All Rights Reserved.</p>
           </div>
        </footer>
-    </div>
   </body>
 </html>

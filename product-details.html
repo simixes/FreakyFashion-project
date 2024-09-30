@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon" />
+    <title>Klädesplagg</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <div class="main-grid">
+
+          <!-- Header part: -->
+
+      <div class="header">
+        <div class="header-item">
+          <!-- logo -->
+          <img src="img/FreakyFashionLogoInvis.png" alt="" />
+        </div>
+        <div class="header-item" id="form-container">
+          <!-- Search -->
+          <form>
+            <input type="text" placeholder="🛒  Sök produkt" />
+          </form>
+          <a id="likeIcon" href="#"
+            ><img src="img/black-heart-svg.svg" alt="likeIcon"
+          /></a>
+          <a id="basketIcon" href="#"
+            ><img src="img/shopping-bag-svg.svg" alt="basketIcon"
+          /></a>
+        </div>
+        <nav class="header-item">
+          <!-- menu -->
+          <ul>
+            <li><a href="#">Nyheter</a></li>
+            <li><a href="#">Topplistan</a></li>
+            <li><a href="#">Rea</a></li>
+            <li><a href="#">Kampanjer</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- product part -->
+
+      <div class="product">
+        <div class="product-item" id="product-img">
+          <img src="https://placehold.co/400x600" alt="placeholder" />
+          <a class="product-button-heart" href="#">
+            <img class="product-heart" src="/img/heart-blanc-svg.svg" alt="Like">
+         </a>
+        </div>
+        <div class="product-item" id="product-text">
+          <h1>Klädesplagg</h1>
+          <p class="clothes-brand">FreakyBrand</p>
+          <p id="description-item1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias corporis dicta ducimus error vel repellat dolor ratione, 
+            voluptates nam, deserunt, et consequatur voluptate omnis suscipit!
+          </p>
+          <p class="price">199 SEK</p>
+          <button class="basket-button1">Lägg i varukorg</button>
+        </div>
+      </div>
+
+      <!-- related products part 1 (G)-->
+
+      <div class="related-product">
+        <h2 id="related-heading">Liknande produkter</h2>
+                <!-- Bild container & annat 1 -->
+                <div class="main-item">
+                  <div class="main-item-img">
+                     <a href="#">
+                        <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
+                     </a>
+                  </div>
+                  <div class="main-item-description">
+                      <h3 class="clothes-item">Klädesplagg 1</h3>
+                      <p class="price">199 SEK</p>
+                      <p class="clothes-brand">FreakyBrand</p>
+                   </div>
+              </div>
+      
+              <!-- Bild container & annat 2 -->
+              <div class="main-item">
+                  <div class="main-item-img">
+                     <a href="#">
+                        <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
+                     </a>
+                  </div>
+                  <div class="main-item-description">
+                      <h3 class="clothes-item">Klädesplagg 2</h3>
+                      <p class="price">199 SEK</p>
+                      <p class="clothes-brand">FreakyBrand</p>
+                   </div>
+              </div>
+      
+              <!-- Bild container & annat 3 -->
+              <div class="main-item">
+                  <div class="main-item-img">
+                      <a href="#">
+                         <img class="fashion-img" src="https://placehold.co/639x700/png" alt="placeholder">
+                      </a>
+                   </div>
+                   <div class="main-item-description">
+                       <h3 class="clothes-item">Klädesplagg 3</h3>
+                       <p class="price">199 SEK</p>
+                       <p class="clothes-brand">FreakyBrand</p>
+                    </div>
+               </div>
+      </div>
+      
+      <!-- related products part 1 (VG)-->
+
+      <section class="carousel-part">
+        <h2 id="h2-carousel">Liknande produkter</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div id="carouselExampleOne" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://placehold.co/639x700/png/FF5733" class="d-block w-100" alt="Red Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 1</h3>
+                                    <p class="price">199 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/639x700/png/33FF57" class="d-block w-100" alt="Green Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 2</h3>
+                                    <p class="price">249 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/639x700/png/3357FF" class="d-block w-100" alt="Blue Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 3</h3>
+                                    <p class="price">299 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleOne" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleOne" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div id="carouselExampleTwo" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://placehold.co/639x700/png/FF5733" class="d-block w-100" alt="Red Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 4</h3>
+                                    <p class="price">179 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/639x700/png/33FF57" class="d-block w-100" alt="Green Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 5</h3>
+                                    <p class="price">219 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/639x700/png/3357FF" class="d-block w-100" alt="Blue Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 6</h3>
+                                    <p class="price">259 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleTwo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleTwo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div id="carouselExampleThree" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://placehold.co/639x700/png/FFD700" class="d-block w-100" alt="Gold Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 7</h3>
+                                    <p class="price">299 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/639x700/png/8A2BE2" class="d-block w-100" alt="Blue Violet Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 8</h3>
+                                    <p class="price">239 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://placehold.co/639x700/png/DC143C" class="d-block w-100" alt="Crimson Color">
+                                <div class="main-item-description">
+                                    <h3 class="clothes-item">Klädesplagg 9</h3>
+                                    <p class="price">219 SEK</p>
+                                    <p class="clothes-brand">FreakyBrand</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleThree" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleThree" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- info-panel -->
+
+       <!-- <footer class="footer"> -->
+        <section id="information-panel">
+          <div class="footer-icons">
+          <div class="site-icons">
+              <img src="/img/truck-fill-svgrepo-com.svg" alt="">
+              <p>Gratis frakt & returer</p>
+          </div>
+          <div class="site-icons">
+              <img src="/img/airplane-svgrepo-com.svg" alt="">
+              <p>Expressfrakt</p>
+          </div>
+          <div class="site-icons">
+              <img src="/img/shield-check-svgrepo-com.svg" alt="">
+              <p>Säkra betalningar</p>
+          </div>
+          <div class="site-icons">
+              <img src="img/new-3-svgrepo-com.svg" alt="">
+              <p>Nyheter varje dag</p>
+          </div>
+          </div>
+        </section>
+
+      <!-- Footer -->
+  
+          <!-- Accordion från bootstrap -->
+        <footer class="footer">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Shopping
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Vinterjackor</li>
+                    <li>Byxor</li>
+                    <li>Tröjor</li>
+                    <li>skjortor</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Mina sidor
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Inställningar</li>
+                    <li>Inloggning och säkerhet</li>
+                    <li>Betalningsalternativ</li>
+                    <li>Dina adresser</li>
+                    <li>Dina beställningar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Kundtjänst
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Kontakta oss</li>
+                    <li>Skicka ett meddelande</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer efter 639px -->
+
+          <div class="footer640px">
+            <div class="footer-item" id="shopping-part">
+              <ul>
+                <li><h2>Shopping</h2></li>
+                <li>Vinterjackor</li>
+                <li>Byxor</li>
+                <li>Tröjor</li>
+                <li>skjortor</li>
+              </ul>
+            </div>
+            <div class="footer-item" id="my-account">
+              <ul>
+                <li><h2>Mina Sidor</h2></li>
+                <li>Inställningar</li>
+                <li>Inloggning och säkerhet</li>
+                <li>Betalningsalternativ</li>
+                <li>Dina adresser</li>
+                <li>Dina beställningar</li>
+              </ul>
+            </div>
+            <div class="footer-item" id="services">
+              <ul>
+                <li><h2>Kundtjänst</h2></li>
+                <li>Kontakta oss</li>
+                <li>Skicka ett meddelande</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- copyright -->
+
+          <div class="copyright">
+            <p>&copy; <span id="year">2024</span> Freaky Fashion. All Rights Reserved.</p>
+          </div>
+       </footer>
+    </div>
+  </body>
+</html>

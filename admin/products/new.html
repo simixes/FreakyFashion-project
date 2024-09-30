@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Administration</title>
+</head>
+<body>
+    <main class="admin">
+        <div class="admin-grid" id="header">Administration</div>
+        <div class="admin-grid" id="side-bar">Produkter</div>
+        <div class="admin-grid" id="add-new">Ny produkt
+            <form class="admin-form">
+                <label for="name">Namn</label><br>
+                <input type="text" id="fname" name="name" maxlength="50" placeholder="Ange namn" required><br>
+
+                <label for="description">Beskrivning</label><br>
+                <textarea name="description" rows="10" cols="60" maxlength="600" placeholder="Ange beskrivning" required></textarea><br>
+
+                <label for="file">Bild</label><br>
+                <input type="file" id="img-file" name="filen" accept="image/*" required><br>
+
+                <label for="sku">SKU</label><br>
+                <input type="text" id="admin-sku" name="sku" maxlength="600" pattern="[A-Za-z]{3}[0-9]{3}" placeholder="Ange SKU: ABC123" required><br>
+
+                <label for="price">Pris</label><br>
+                <input type="text" name="price" id="admin-price" pattern="[0-9]+" placeholder="Ange pris" required><br>
+
+                <label for="publish">Publiseringsdatum</label><br>
+                <input type="date"><br>
+
+                <label for="checkbox">Kategorier</label><br>
+                <input type="checkbox" id="category1" name="category1" value="T-shirts">
+                <label for="vehicle1">T-shirts</label><br>
+                <input type="checkbox" id="category2" name="category2" value="Sommar">
+                <label for="vehicle2">Sommar</label><br>
+                <input type="checkbox" id="category3" name="category3" value="Byxor">
+                <label for="vehicle3">Byxor</label><br>
+                <input type="checkbox" id="category4" name="category4" value="Skor">
+                <label for="vehicle3">Skor</label><br><br>
+
+                <input type="submit" value="Lägg till">
+              </form> 
+        </div>
+        
+
+    </main>
+</body>
+</html>
