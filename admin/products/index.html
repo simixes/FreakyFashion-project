@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <title>Administration</title>
-</head>
-<body>
+  </head>
+  <body>
     <main class="admin">
-        <div class="admin-grid" id="header">Administration</div>
-        <div class="admin-grid" id="side-bar">Produkter</div>
-        <div class="admin-grid" id="add-new">Produkter
-            <button id="button-addnew">
-                <a href="/admin/products/new.html">Ny produkt</a>
-            </button>
-            <table class="admin-table">
-                <thead>
-                    <tr>
-                        <th>Namn</th>
-                        <th>SKU</th>
-                        <th>Pris</th>
-                        <th></th>
-                    </tr> 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Orange skjorta</td>
-                        <td>AOA132</td>
-                        <td>599</td>
-                        <td><a href="#"><img src="/img/edit-page-svg.svg" alt="edit"></a><a href="#"><img src="/img/trashcan-img-svg.svg" alt="trashcan"></a></td>
-                    </tr>
-                    <tr>
-                        <td>Marin-blå klänning</td>
-                        <td>MBB455</td>
-                        <td>799</td>
-                        <td><a href="#"><img src="/img/edit-page-svg.svg" alt="edit"></a><a href="#"><img src="/img/trashcan-img-svg.svg" alt="trashcan"></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
+      <div class="admin-grid" id="header">Administration</div>
+      <div class="admin-grid" id="side-bar">Produkter</div>
+      <div class="admin-grid" id="add-new">
+        Produkter
+        <a href="/admin/products/new.html" class="button-link">Ny produkt</a>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Namn</th>
+              <th>SKU</th>
+              <th>Pris</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Orange skjorta</td>
+              <td>AOA132</td>
+              <td>599</td>
+              <td>
+                <a href="#"><img src="/img/edit-page-svg.svg" alt="edit" /></a
+                ><a href="#"
+                  ><img src="/img/trashcan-img-svg.svg" alt="trashcan"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>Marin-blå klänning</td>
+              <td>MBB455</td>
+              <td>799</td>
+              <td>
+                <a href="#"><img src="/img/edit-page-svg.svg" alt="edit" /></a
+                ><a href="#"
+                  ><img src="/img/trashcan-img-svg.svg" alt="trashcan"
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
-</body>
+  </body>
 </html>
