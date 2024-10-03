@@ -7,7 +7,7 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h3 {
-    color: #4c4c7e;
+    color: #4a4a55;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a {
@@ -159,6 +159,10 @@ a {
 
 .main {
     display: grid;
+}
+
+#main-h2-nonvisible {
+    display: none;
 }
 
 .main-item {
