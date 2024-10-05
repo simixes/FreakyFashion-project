@@ -174,7 +174,6 @@ a {
 }
 .main-item-img { /* Skapa img & dess container till relative */
     position: relative;
-    /* max-width: 639px; */
 }
 .main-item-img .fashion-img {
     max-width: 100%;
@@ -306,7 +305,7 @@ a {
     list-style-type: none;
 }
 .accordion-button {
-    background-color: gold !important; /* Guldfärg */
+    background-color: gold !important; 
     color: #000 !important;
     border: none !important;
 }
@@ -317,7 +316,7 @@ a {
 }
 
 .accordion-body {
-    color: rgb(51, 51, 51) !important; /* Textfärg */
+    color: rgb(51, 51, 51) !important; 
 }
 
 .accordion ul * {
@@ -355,7 +354,6 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
-        /* justify-content: space-evenly; */
         width: 100%;
     }
 
@@ -546,7 +544,7 @@ a {
     }
 
     .spots-item h2 {
-        background-color: #79757577; /* Applicera färg med genomskinlighet så att det ser ut som ett glas */
+        background-color: #79757577; /* Applicera färg med genomskinlighet så att det ser ut som glas */
         border: 10px groove #7975750e;
         border-radius: 30px;
         font-size: 19px;
